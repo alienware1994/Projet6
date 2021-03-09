@@ -1,0 +1,10 @@
+# Projet6
+
+Pour installer l'app exécuter "npm install"
+
+Le projet a été généré avec Angular CLI version 7.0.2.
+
+Pour faire fonctionner le projet, vous devez installer node-sass à part.
+
+# Development server
+Démarrer ng serve pour avoir accès au serveur de développement. Rendez-vous sur http://localhost:4200/. L'application va se recharger automatiquement si vous modifiez un fichier source.
