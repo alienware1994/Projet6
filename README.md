@@ -1,10 +1,8 @@
 # Projet6
 
-Pour installer l'app exécuter "npm install"
+Pour installer l'app exécuter "npm install" dans le backend et éxecuter la commande nodemon pour lancer le back
 
-Le projet a été généré avec Angular CLI version 7.0.2.
-
-Pour faire fonctionner le projet, vous devez installer node-sass à part.
+pour le front aller dans le dossier frontend et faire un npm install, si une erreur survient, il suffit juste de refaire un npm install pour la corriger.
 
 # Development server
 Démarrer ng serve pour avoir accès au serveur de développement. Rendez-vous sur http://localhost:4200/. L'application va se recharger automatiquement si vous modifiez un fichier source.
