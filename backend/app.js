@@ -19,7 +19,7 @@ app.use(mongoSanitize()); //Import de mongo-sanitize pour empecher les attaques 
 
 mongoose
   .connect(
-    "mongodb+srv://dylanp6:adminp6@cluster0.xk6fh.mongodb.net/testp6?retryWrites=true&w=majority",
+    process.env.DB_LINK,
     { useNewUrlParser: true, useUnifiedTopology: true }
   )
   .then(() => console.log("Connexion à MongoDB réussie !"))

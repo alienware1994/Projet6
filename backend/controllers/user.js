@@ -7,14 +7,14 @@ const User = require("../models/User");
 require("dotenv").config();
 // Fonction pour la création d'un utilisateur quand celui ci s'inscrit avec le masquage de l'adrtesse mail 
 exports.signup = (req, res, next) => {
-  const maskedMail = maskData.maskEmail2(req.body.email); // masquage de l'adresse mail
+  // const maskedMail = maskData.maskEmail2(req.body.email); // masquage de l'adresse mail
 
   bcrypt
     .hash(req.body.password, 10)
     .then((hash) => {
       const user = new User({
-        // email:req.body.email,
-        email: maskedMail, // masquage de l'adresse mail
+         email: req.body.email,
+        // email: maskedMail, // masquage de l'adresse mail
         password: hash,
       });
       user
@@ -26,7 +26,9 @@ exports.signup = (req, res, next) => {
 };
 // fonction pour la connexion de l'utilisateur en traduisant l'adresse mail masquer et le mot de passe crypter avec Bcrypt
 exports.login = (req, res, next) => {
-  const maskedMail = maskData.maskEmail2(req.body.email);
+  // const maskedMail = maskData.maskEmail2(req.body.email);
+  const maskedMail = req.body.email;
+  
   User.findOne({ email: maskedMail }) // masquage de l'adresse mail
     .then((user) => {
       if (!user) {
@@ -40,7 +42,7 @@ exports.login = (req, res, next) => {
           }
           res.status(200).json({
             userId: user._id,
-            token: jwt.sign({ userId: user._id }, "testest", {
+            token: jwt.sign({ userId: user._id }, process.env.TOKEN_KEY, {
               expiresIn: "24h",
             }),
           });

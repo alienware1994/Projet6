@@ -30,27 +30,27 @@ GET http://localhost:3000/api/sauces
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDFhYmY5YjA0NDA0NTQxM2M4MTE3MjIiLCJpYXQiOjE2MTIzNjU3MzcsImV4cCI6MTYxMjQ1MjEzN30.DuJB6PX-Q1vQuafToI619vbWVReZUnZDrKuR0GChwW0
 
 ###
-PUT http://localhost:3000/api/sauces/601abdf9044045413c811721
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDFhYmY5YjA0NDA0NTQxM2M4MTE3MjIiLCJpYXQiOjE2MTQ5MzkxNTMsImV4cCI6MTYxNTAyNTU1M30.Kjd8peyV5f5U0PIAm-u86CaoUZXjTApOI3wy4svuD4s
+PUT http://localhost:3000/api/sauces/604b4b1428696a3050e7a108
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDRiNGExNzI4Njk2YTMwNTBlN2ExMDciLCJpYXQiOjE2MTU1NDg5ODMsImV4cCI6MTYxNTYzNTM4M30.X4Fgv-tKWu7ivXOEtm-WZ-1SKT-VuwOErGiUVka9I9Y
 Content-Type: application/json
 
 {
     "name": "rastarocketSsser34",
-    "likes": 50
+    
 }
 ###
 POST http://localhost:3000/api/auth/signup
 Content-Type: application/json
 
 {
-    "email": "dylan.p10lanche@gmail.com",
-    "password": "Test0000"
+    "email": "dylan.p2lanche@gmail.com",
+    "password": "Alienware1994789"
 }
 ###
 POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "email": "dylan.p10lanche@gmail.com",
-    "password": "Test0000"
+    "email": "dylan.p2lanche@gmail.com",
+    "password": "Alienware1994789"
 }
