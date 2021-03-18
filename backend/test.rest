@@ -4,19 +4,19 @@ GET http://localhost:3000/api/sauces/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDRiOTRkZmI0ZDI5YzJjYjRjNDFiZmEiLCJpYXQiOjE2MTU1NjYwNTAsImV4cCI6MTYxNTY1MjQ1MH0.LD-cCijh8kqrlJDxK1pBHIwU2jYfe5QvIL31A4fC3DM
 
 ###
-PUT http://localhost:3000/api/sauces/
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDRmMzkzZjQ3ODBiZDBiMTAzNjMzMmMiLCJpYXQiOjE2MTU5NzY3MjYsImV4cCI6MTYxNjA2MzEyNn0.olsG1z6m3sLBDfzG9G48VWbCqbp1pM3ZGVbJtTi6XOo
+PUT http://localhost:3000/api/sauces/605246bdf99e80275831324a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDUyNDY3MGY5OWU4MDI3NTgzMTMyNDkiLCJpYXQiOjE2MTYwMDQ4NzEsImV4cCI6MTYxNjA5MTI3MX0.9uwj8YFQ0AZDDjjxbj94Lk72mLGkzD-rVDzhcP-GqYA
 Content-Type: application/json
 
 {
-    "name": "sauce modifié"
+    "name": "sauce modifié1"
 }
 ###
 POST http://localhost:3000/api/auth/signup
 Content-Type: application/json
 
 {
-    "email": "dylan.p13lanche@gmail.com",
+    "email": "dylan.planche@gmail.com",
     "password": "Alienware1994789"
 }
 ###
@@ -24,6 +24,6 @@ POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "email": "dylan.p13lanche@gmail.com",
+    "email": "dylan.p1lanche@gmail.com",
     "password": "Alienware1994789"
 }
