@@ -6,8 +6,11 @@ const userRoutes = require("./routes/user");
 const path = require("path");
 const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
-const Sauces = require("./models/Sauces");
-const { createSauce } = require("./controllers/sauces");
+const xss = require("xss");
+
+
+const html = xss('<script>alert("xss");</script>');
+console.log(html);
 
 
 const app = express();

@@ -1,49 +1,22 @@
-POST http://localhost:3000/api/auth/signup
+
+###
+GET http://localhost:3000/api/sauces/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDRiOTRkZmI0ZDI5YzJjYjRjNDFiZmEiLCJpYXQiOjE2MTU1NjYwNTAsImV4cCI6MTYxNTY1MjQ1MH0.LD-cCijh8kqrlJDxK1pBHIwU2jYfe5QvIL31A4fC3DM
+
+###
+PUT http://localhost:3000/api/sauces/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDRmMzkzZjQ3ODBiZDBiMTAzNjMzMmMiLCJpYXQiOjE2MTU5NzY3MjYsImV4cCI6MTYxNjA2MzEyNn0.olsG1z6m3sLBDfzG9G48VWbCqbp1pM3ZGVbJtTi6XOo
 Content-Type: application/json
 
 {
-    "email": "dylan.p3lanche@gmail.com",
-    "password": "Test0000"
-}
-###
-POST http://localhost:3000/api/auth/login
-Content-Type: application/json
-
-{
-    "email": "dylan.p3lanche@gmail.com",
-    "password": "Test0000"
-}
-###
-
-POST http://localhost:3000/api/sauces
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI1ZmY1ZDY3M2VkOTcxZDExNGM4OTJmYTQiLCJpYXQiOjE2MTA1NTE0OTEsImV4cCI6MTYxMDYzNzg5MX0.GCgP8tQxjRqUnxarPj2eDdM5vSTNYu3-_Rx3tNa5PfQ
-
-{
-    "name": "test1",
-    "Manufacturer": "test2",
-    "Description": "sauce très piquante",
-
-}
-###
-GET http://localhost:3000/api/sauces
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDFhYmY5YjA0NDA0NTQxM2M4MTE3MjIiLCJpYXQiOjE2MTIzNjU3MzcsImV4cCI6MTYxMjQ1MjEzN30.DuJB6PX-Q1vQuafToI619vbWVReZUnZDrKuR0GChwW0
-
-###
-PUT http://localhost:3000/api/sauces/604b4b1428696a3050e7a108
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MDRiNGExNzI4Njk2YTMwNTBlN2ExMDciLCJpYXQiOjE2MTU1NDg5ODMsImV4cCI6MTYxNTYzNTM4M30.X4Fgv-tKWu7ivXOEtm-WZ-1SKT-VuwOErGiUVka9I9Y
-Content-Type: application/json
-
-{
-    "name": "rastarocketSsser34",
-    
+    "name": "sauce modifié"
 }
 ###
 POST http://localhost:3000/api/auth/signup
 Content-Type: application/json
 
 {
-    "email": "dylan.p2lanche@gmail.com",
+    "email": "dylan.p13lanche@gmail.com",
     "password": "Alienware1994789"
 }
 ###
@@ -51,6 +24,6 @@ POST http://localhost:3000/api/auth/login
 Content-Type: application/json
 
 {
-    "email": "dylan.p2lanche@gmail.com",
+    "email": "dylan.p13lanche@gmail.com",
     "password": "Alienware1994789"
 }

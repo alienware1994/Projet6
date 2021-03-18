@@ -26,6 +26,7 @@
     "nodemon": "^2.0.6",
     "npm-check-updates": "^9.1.0",
     "password-validator": "^5.1.0",
-    "sass": "^1.32.0"
+    "sass": "^1.32.0",
+    "xss": "^1.0.8"
   }
 }
